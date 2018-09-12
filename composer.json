@@ -48,10 +48,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Ludo237\\DelayedArtisticGuppy\\ServiceProvider"
+        "Ludo237\\DelayedArtisticGuppy\\DelargServiceProvider"
       ],
       "aliases": {
-        "Slugify": "Ludo237\\DelayedArtisticGuppy\\Facades\\Slugify"
+        "Delarg": "Ludo237\\DelayedArtisticGuppy\\Facades\\Delarg"
       }
     }
   }
