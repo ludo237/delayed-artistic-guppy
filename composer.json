@@ -1,0 +1,43 @@
+{
+    "name": "ludo237/slugify",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claudio Ludovico",
+            "email": "ludo237@outlook.com",
+        }
+    ],
+    "homepage": "https://github.com/ludo237/slugify",
+    "keywords": ["Laravel", "Slugify"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ludo237\\Slugify\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ludo237\\Slugify\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ludo237\\Slugify\\SlugifyServiceProvider"
+            ],
+            "aliases": {
+                "Slugify": "Ludo237\\Slugify\\Facades\\Slugify"
+            }
+        }
+    }
+}
