@@ -1,15 +1,16 @@
 <?php
 
-if (!function_exists("slugfy")) {
+if (!function_exists("slugify")) {
+    
     /**
      * Procedural generated slug
      *
      * @param int $length
      * @return string
      */
-    function slugfy(int $length = 3) : string
+    function slugify(int $length = 3) : string
     {
-        $slugifier = app("slugfy");
+        $slugifier = app("slugify");
         
         return $slugifier->slugify($length);
     }

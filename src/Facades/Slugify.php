@@ -4,7 +4,11 @@ namespace Ludo237\Slugify\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Slugify extends Facade
+/**
+ * Class Slugify
+ * @package Ludo237\Slugify\Facades
+ */
+final class Slugify extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +17,6 @@ class Slugify extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'slugify';
+        return "slugify";
     }
 }

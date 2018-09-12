@@ -4,7 +4,11 @@ namespace Ludo237\Slugify;
 
 use Illuminate\Foundation\Application;
 
-class Slugify
+/**
+ * Class Slugify
+ * @package Ludo237\Slugify
+ */
+final class Slugify
 {
     /**
      * The Laravel application instance.
