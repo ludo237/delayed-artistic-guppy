@@ -7,7 +7,7 @@ Take a look at [contributing.md](contributing.md) to see a to do list.
 Via Composer
 
 ``` bash
-$ composer require euhehue/ehuuhee
+$ composer require ludo237/slugify
 ```
 
 ## Usage
