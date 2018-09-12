@@ -23,9 +23,16 @@ Please see the [changelog](changelog.md) for more information on what has change
 
 ## Testing
 
-```bash
-$ composer test
-```
+### With Docker
+
+Testing the package with docker is a piece of cake, simply run `docker-compose up` and then in order
+
+- `docker exec slugify_web composer install`
+- `docker exec slufigy_web vendor/bin/phpunit`
+
+### Without Docker
+
+You will need PHP installed on your machine as well as composer, then you can simply run `composer install` and `vendor/bin/phpunit`
 
 ## Contributing
 
