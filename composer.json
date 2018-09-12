@@ -41,7 +41,14 @@
       "Ludo237\\DelayedArtisticGuppy\\Tests\\": "tests"
     }
   },
+  "minimum-stability": "stable",
+  "config": {
+    "sort-packages": true
+  },
   "extra": {
+    "branch-alias": {
+      "dev-master": "master"
+    },
     "laravel": {
       "providers": [
         "Ludo237\\DelayedArtisticGuppy\\ServiceProvider"
