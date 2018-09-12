@@ -22,7 +22,7 @@
             "Ludo237\\Slugify\\": "src/"
         },
         "files": [
-            "src/helper.php"
+            "src/helpers.php"
         ]
     },
     "autoload-dev": {
