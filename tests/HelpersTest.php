@@ -1,23 +1,23 @@
 <?php
 
-namespace Ludo237\Slugify\Tests;
+namespace Ludo237\DelayedArtisticGuppy\Tests;
 
 /**
  * HelpersTest
- * @package Ludo237\Slugify\Tests
+ * @package Ludo237\DelayedArtisticGuppy\Tests
  */
 final class HelpersTest extends TestCase
 {
     /** @test */
     public function it_generates_a_random_slug()
     {
-        $this->assertNotNull(slugify());
+        $this->assertNotNull(delarg());
     }
     
     /** @test */
-    public function slugify_accepts_a_length_as_variable()
+    public function delarg_accepts_a_length_as_variable()
     {
-        $this->assertCount(3, $this->explode(slugify()));
-        $this->assertCount(4, $this->explode(slugify(4)));
+        $this->assertCount(3, $this->explode(delarg()));
+        $this->assertCount(4, $this->explode(delarg(4)));
     }
 }

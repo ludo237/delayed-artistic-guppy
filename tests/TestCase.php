@@ -1,22 +1,22 @@
 <?php
 
-namespace Ludo237\Slugify\Tests;
+namespace Ludo237\DelayedArtisticGuppy\Tests;
 
 /**
  * TestCase
- * @package Ludo237\Slugify\Tests
+ * @package Ludo237\DelayedArtisticGuppy\Tests
  */
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
     protected function getPackageProviders($app)
     {
-        return [\Ludo237\Slugify\SlugifyServiceProvider::class];
+        return [\Ludo237\DelayedArtisticGuppy\DelargServiceProvider::class];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            "Slugify" => \Ludo237\Slugify\Facades\Slugify::class
+            "Slugify" => \Ludo237\DelayedArtisticGuppy\Facades\Slugify::class
         ];
     }
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace Ludo237\Slugify;
+namespace Ludo237\DelayedArtisticGuppy;
 
 use Illuminate\Foundation\Application;
 
 /**
- * Class Slugify
- * @package Ludo237\Slugify
+ * Class Delarg
+ * @package Ludo237\DelayedArtisticGuppy
  */
-final class Slugify
+final class Delarg
 {
     /**
      * The Laravel application instance.
@@ -30,7 +30,8 @@ final class Slugify
     public $basket = [];
     
     /**
-     * Slugify constructor.
+     * Delarg constructor.
+     * 
      * @param \Illuminate\Foundation\Application $app
      */
     public function __construct(Application $app = null)
@@ -44,7 +45,7 @@ final class Slugify
      * @param int $length
      * @return string
      */
-    public function slugify(int $length = 3) : string
+    public function slugfy(int $length = 3) : string
     {
         $this->createBasket();
         
@@ -59,8 +60,8 @@ final class Slugify
     protected function createBasket() : void
     {
         $this->basket = array_merge(
-            $this->app["config"]->get("slugify.adjectives"),
-            $this->app["config"]->get("slugify.animals")
+            $this->app["config"]->get("delarg.adjectives"),
+            $this->app["config"]->get("delarg.animals")
         );
     }
     
@@ -73,7 +74,7 @@ final class Slugify
     protected function shuffleBasket(int $length) : array
     {
         return array_map(
-            $this->app["config"]->get("slugify.format"),
+            "ucfirst",
             array_random($this->basket, $length)
         );
     }

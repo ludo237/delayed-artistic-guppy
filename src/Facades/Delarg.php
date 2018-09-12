@@ -1,14 +1,14 @@
 <?php
 
-namespace Ludo237\Slugify\Facades;
+namespace Ludo237\DelayedArtisticGuppy\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class Slugify
- * @package Ludo237\Slugify\Facades
+ * Class Delarg
+ * @package Ludo237\DelayedArtisticGuppy\Facades
  */
-final class Slugify extends Facade
+final class Delarg extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -17,6 +17,6 @@ final class Slugify extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return "slugify";
+        return "delarg";
     }
 }

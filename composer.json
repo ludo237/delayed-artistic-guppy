@@ -1,5 +1,5 @@
 {
-  "name": "ludo237/slugify",
+  "name": "ludo237/delayed-artistic-guppy",
   "description": "Package that generates slugify words like Gfycat or Twitch Clips",
   "license": "MIT",
   "authors": [
@@ -8,7 +8,7 @@
       "email": "ludo237@outlook.com"
     }
   ],
-  "homepage": "https://github.com/ludo237/slugify",
+  "homepage": "https://github.com/ludo237/delayed-artistic-guppy",
   "keywords": [
     "Laravel",
     "Slugify"
@@ -25,7 +25,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Ludo237\\Slugify\\": "src/"
+      "Ludo237\\DelayedArtisticGuppy\\": "src/"
     },
     "files": [
       "src/helpers.php"
@@ -33,16 +33,16 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Ludo237\\Slugify\\Tests\\": "tests"
+      "Ludo237\\DelayedArtisticGuppy\\Tests\\": "tests"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Ludo237\\Slugify\\SlugifyServiceProvider"
+        "Ludo237\\DelayedArtisticGuppy\\ServiceProvider"
       ],
       "aliases": {
-        "Slugify": "Ludo237\\Slugify\\Facades\\Slugify"
+        "Slugify": "Ludo237\\DelayedArtisticGuppy\\Facades\\Slugify"
       }
     }
   }

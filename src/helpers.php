@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists("slugify")) {
+if (!function_exists("delarg")) {
     
     /**
      * Procedural generated slug
@@ -8,10 +8,8 @@ if (!function_exists("slugify")) {
      * @param int $length
      * @return string
      */
-    function slugify(int $length = 3) : string
+    function delarg(int $length = 3) : string
     {
-        $slugifier = app("slugify");
-        
-        return $slugifier->slugify($length);
+        return app("delarg")->slugfy($length);
     }
 }

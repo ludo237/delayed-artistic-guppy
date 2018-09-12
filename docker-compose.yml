@@ -2,7 +2,7 @@ version: "3"
 
 services:
   web:
-    container_name: slugify_web
+    container_name: delarg_web
     image: 6gosrl/laravel
     environment:
       - WEB_DOCUMENT_ROOT=/app/public

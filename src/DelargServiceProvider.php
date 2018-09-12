@@ -1,14 +1,14 @@
 <?php
 
-namespace Ludo237\Slugify;
+namespace Ludo237\DelayedArtisticGuppy;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class SlugifyServiceProvider
- * @package Ludo237\Slugify
+ * Class DelargServiceProvider
+ * @package Ludo237\DelayedArtisticGuppy
  */
-final class SlugifyServiceProvider extends ServiceProvider
+final class DelargServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -29,8 +29,8 @@ final class SlugifyServiceProvider extends ServiceProvider
             
             // Publishing the configuration file.
             $this->publishes([
-                __DIR__ . "/../config/slugify.php" => config_path("slugify.php"),
-            ], "slugify.config");
+                __DIR__ . "/../config/delarg.php" => config_path("delarg.php"),
+            ], "delarg.config");
         }
     }
     
@@ -41,14 +41,14 @@ final class SlugifyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . "/../config/slugify.php", "slugify");
+        $this->mergeConfigFrom(__DIR__ . "/../config/delarg.php", "delarg");
         
         // Register the service the package provides.
-        $this->app->singleton(Slugify::class, function () {
-            return new Slugify($this->app);
+        $this->app->singleton(Delarg::class, function () {
+            return new Delarg($this->app);
         });
     
-        $this->app->alias(Slugify::class, "slugify");
+        $this->app->alias(Delarg::class, "delarg");
     }
     
     /**
@@ -58,6 +58,6 @@ final class SlugifyServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ["slugify"];
+        return ["delarg"];
     }
 }

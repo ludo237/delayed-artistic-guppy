@@ -1,21 +1,23 @@
-# Laravel Slugify
+# Delayed Artistic Guppy
 
-Package that generates slugify words like Gfycat or Twitch Clips.
+![Source Gif](https://zippy.gfycat.com/DelayedArtisticGuppy.gif)
+
+Package that generates `AdjectiveAnimal` words similar to Gfycat or Twitch Clips.
 
 Take a look at [contributing.md](contributing.md) to see a to do list.
 
 ## Installation
 
-Via Composer `$ composer require ludo237/slugify`
+Via Composer `$ composer require ludo237/delayed-artistic-guppy`
 
 ### Publish Config
 
-This package has a single configuration file called `slugify.php` it contains two big arrays of animal names and adjectives in order to generate the slug
+This package has a single configuration file called `delarg.php` it contains two big arrays of animal names and adjectives in order to generate the slug
 
 ## Usage
 
-After the installation you can simply call the helper `slugify()` and it will print
-a new word just for you.
+After the installation you can simply call the helper `delarg()` and it will print a new word just for you.
+Feel free to use the facade `Delarg::slugify()` if you need.
 
 ## Change log
 
@@ -27,8 +29,8 @@ Please see the [changelog](changelog.md) for more information on what has change
 
 Testing the package with docker is a piece of cake, simply run `docker-compose up` and then in order
 
-- `docker exec slugify_web composer install`
-- `docker exec slufigy_web vendor/bin/phpunit`
+- `docker exec delarg_web composer install`
+- `docker exec delarg_web vendor/bin/phpunit`
 
 ### Without Docker
 
