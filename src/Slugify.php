@@ -27,7 +27,7 @@ final class Slugify
     /**
      * @var array
      */
-    protected $basket = [];
+    public $basket = [];
     
     /**
      * Slugify constructor.
