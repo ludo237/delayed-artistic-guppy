@@ -6,11 +6,11 @@ Take a look at [contributing.md](contributing.md) to see a to do list.
 
 ## Installation
 
-Via Composer
+Via Composer `$ composer require ludo237/slugify`
 
-```bash
-$ composer require ludo237/slugify
-```
+### Publish Config
+
+This package has a single configuration file called `slugify.php` it contains two big arrays of animal names and adjectives in order to generate the slug
 
 ## Usage
 

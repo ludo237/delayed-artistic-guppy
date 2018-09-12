@@ -4,7 +4,6 @@ namespace Ludo237\Slugify\Tests;
 
 use Ludo237\Slugify\Slugify;
 
-
 /**
  * SlugifyTest
  * @package Ludo237\Slugify\Tests
