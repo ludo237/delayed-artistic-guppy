@@ -46,9 +46,6 @@
     "sort-packages": true
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "master"
-    },
     "laravel": {
       "providers": [
         "Ludo237\\DelayedArtisticGuppy\\ServiceProvider"
