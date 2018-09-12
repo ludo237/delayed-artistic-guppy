@@ -16,6 +16,7 @@
     </testsuites>
     <filter>
         <whitelist>
+            <directory>config/</directory>
             <directory>src/</directory>
         </whitelist>
     </filter>

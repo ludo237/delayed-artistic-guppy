@@ -21,7 +21,7 @@
     "php": "^7.2",
     "laravel/framework": "5.6.x|5.7.x",
     "phpunit/phpunit": "^7.3",
-    "orchestra/testbench": "~3.0"
+    "orchestra/testbench": "^3.6"
   },
   "autoload": {
     "psr-4": {
