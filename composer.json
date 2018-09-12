@@ -10,8 +10,13 @@
   ],
   "homepage": "https://github.com/ludo237/delayed-artistic-guppy",
   "keywords": [
-    "Laravel",
-    "Slugify"
+    "laravel",
+    "slugfy",
+    "gfycat",
+    "twitch",
+    "gif",
+    "laravel-package",
+    "open-source"
   ],
   "require": {
     "php": "^7.2",
