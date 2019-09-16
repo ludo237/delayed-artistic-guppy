@@ -3,6 +3,7 @@
 namespace Ludo237\DelayedArtisticGuppy;
 
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Arr;
 
 /**
  * Class Delarg
@@ -75,7 +76,7 @@ final class Delarg
     {
         return array_map(
             "ucfirst",
-            array_random($this->basket, $length)
+            Arr::random($this->basket, $length)
         );
     }
 }
