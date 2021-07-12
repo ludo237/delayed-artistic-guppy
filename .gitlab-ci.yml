@@ -29,7 +29,7 @@ composer:
     - composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts -o
 
 # Check Code Style
-codestyle:
+phpcs:
   stage: check
   image: lorisleiva/laravel-docker
   environment:
@@ -46,7 +46,7 @@ codestyle:
     - phpcs --standard=PSR2 --extensions=php --report=full --report-file=./reports/$CI_COMMIT_SHA.txt -v src
 
 # Run analysis for standards
-code_quality:
+phpstan:
   stage: check
   needs: ["composer"]
   dependencies:

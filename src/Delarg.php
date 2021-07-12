@@ -32,8 +32,8 @@ final class Delarg
     
     /**
      * Delarg constructor.
-     * 
-     * @param \Illuminate\Foundation\Application $app
+     *
+     * @param \Illuminate\Foundation\Application|null $app
      */
     public function __construct(Application $app = null)
     {
@@ -44,6 +44,7 @@ final class Delarg
     
     /**
      * @param int $length
+     *
      * @return string
      */
     public function slugfy(int $length = 3) : string
@@ -70,6 +71,7 @@ final class Delarg
      * Shuffle the current basket of words
      *
      * @param int $length
+     *
      * @return array
      */
     protected function shuffleBasket(int $length) : array

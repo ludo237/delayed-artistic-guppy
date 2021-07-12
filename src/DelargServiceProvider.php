@@ -26,7 +26,6 @@ final class DelargServiceProvider extends ServiceProvider
     {
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
-            
             // Publishing the configuration file.
             $this->publishes([
                 __DIR__ . "/../config/delarg.php" => config_path("delarg.php"),
@@ -56,7 +55,7 @@ final class DelargServiceProvider extends ServiceProvider
      *
      * @return array
      */
-    public function provides()
+    public function provides() : array
     {
         return ["delarg"];
     }

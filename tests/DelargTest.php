@@ -12,21 +12,21 @@ final class DelargTest extends TestCase
 {
     /** @var Ludo237\DelayedArtisticGuppy\Delarg */
     private $mock;
-
-    public function setUp()
+    
+    public function setUp() : void
     {
         parent::setUp();
-
+        
         $this->mock = app("delarg");
     }
-
+    
     /** @test */
-   public function it_has_an_empty_basket_when_starts()
-   {
-       $this->assertInternalType("array", $this->mock->basket);
-       $this->assertEquals(0, count($this->mock->basket));
-   }
-
+    public function it_has_an_empty_basket_when_starts()
+    {
+        $this->assertIsArray($this->mock->basket);
+        $this->assertEquals(0, count($this->mock->basket));
+    }
+    
     /** @test */
     public function it_generates_a_random_slug()
     {
