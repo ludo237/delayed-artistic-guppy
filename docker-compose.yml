@@ -1,12 +1,14 @@
-version: "3"
+version: "3.7"
 
 services:
-  web:
-    container_name: delarg_web
-    image: 6gosrl/laravel
-    environment:
-      - WEB_DOCUMENT_ROOT=/app/public
-    ports:
-      - "80:80"
+  workspace:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: laravel-eloquent-traits
+    container_name: let
+    restart: on-failure
+    working_dir: /var/www/
     volumes:
-      - .:/app
+      - ./:/var/www:cached
+    tty: true

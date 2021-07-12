@@ -19,14 +19,17 @@
     "open-source"
   ],
   "require": {
-    "php": "^7.2",
-    "illuminate/support": "6.x|7.x"
+    "php": "^7.2|^8.0",
+    "illuminate/support": "7.x|8.x"
   },
   "require-dev": {
-    "php": "^7.2",
-    "laravel/framework": "6.x|7.x",
-    "orchestra/testbench": "^3.6",
-    "phpunit/phpunit": "^8.0"
+    "fakerphp/faker": "^1.13",
+    "laravel/framework": "7.x|8.x",
+    "mockery/mockery": "^1.4",
+    "nunomaduro/larastan": "^0.7",
+    "orchestra/testbench": "^6.12",
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.5"
   },
   "autoload": {
     "psr-4": {
