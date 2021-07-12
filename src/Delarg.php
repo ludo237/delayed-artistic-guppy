@@ -2,7 +2,7 @@
 
 namespace Ludo237\DelayedArtisticGuppy;
 
-use Illuminate\Foundation\Application;
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Arr;
 
 /**
@@ -14,31 +14,30 @@ final class Delarg
     /**
      * The Laravel application instance.
      *
-     * @var \Illuminate\Foundation\Application
+     * @var \Illuminate\Contracts\Foundation\Application
      */
-    protected $app;
+    protected Application $app;
     
     /**
      * Normalized Laravel Version
      *
      * @var string
      */
-    protected $version;
+    protected string $version;
     
     /**
      * @var array
      */
-    public $basket = [];
+    public array $basket = [];
     
     /**
      * Delarg constructor.
      *
-     * @param \Illuminate\Foundation\Application|null $app
+     * @param \Illuminate\Contracts\Foundation\Application $app
      */
-    public function __construct(Application $app = null)
+    public function __construct(Application $app)
     {
-        //Fallback when $app is not given
-        $this->app = $app ?? app();
+        $this->app = $app;
         $this->version = $app->version();
     }
     

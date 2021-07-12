@@ -15,7 +15,7 @@ final class DelargServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = false;
+    protected bool $defer = false;
     
     /**
      * Perform post-registration booting of services.
@@ -43,10 +43,8 @@ final class DelargServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . "/../config/delarg.php", "delarg");
         
         // Register the service the package provides.
-        $this->app->singleton(Delarg::class, function () {
-            return new Delarg($this->app);
-        });
-    
+        $this->app->singleton(Delarg::class, fn() => new Delarg($this->app));
+        
         $this->app->alias(Delarg::class, "delarg");
     }
     
