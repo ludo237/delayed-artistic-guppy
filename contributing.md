@@ -2,7 +2,7 @@
 
 Contributions are welcome and will be fully credited.
 
-Contributions are accepted via Pull Requests on [Github](https://github.com/ludo237/slugify).
+Contributions are accepted via Pull Requests on [Gitlab](https://gitlab.com/ludo237/delayed-artistic-guppy).
 
 ## Things you could do
 
